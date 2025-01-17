@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* Primary Colors */
+    --dark-blue-intro-and-email: hsl(217, 28%, 15%);
+    --dark-blue-main: hsl(218, 28%, 13%);
+    --dark-blue-footer: hsl(216, 53%, 9%);
+    --dark-blue-testimonials: hsl(219, 30%, 18%);
+
+    /* Accent Colors */
+    --cyan-inside-call-to-action: hsl(176, 68%, 64%);
+    --blue-inside-call-to-action: hsl(198, 60%, 50%);
+    --light-red-error: hsl(0, 100%, 63%);
+
+    /* Neutral Colors */
+    --white: hsl(0, 0%, 100%);
+
+    /* Font Families */
+    --font-family-body: 'Open Sans', sans-serif;
+    --font-family-headings: 'Raleway', sans-serif;
+
+    /* Font Weights */
+    --font-weight-body: 400;
+    --font-weight-headings: 700;
+
+    /* Font Sizes */
+    --font-size-body: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
