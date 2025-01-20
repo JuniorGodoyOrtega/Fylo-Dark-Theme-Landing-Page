@@ -155,3 +155,112 @@ body {
     text-align: center;
     width: 90%;
 }
+
+.section__productivity {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+}
+
+.section__illustration {
+    width: 100%;
+    display: block;
+}
+
+.section__title {
+    font-family: var(--font-family-headings);
+    font-size: 1.7rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.section__paragraph {
+    font-family: var(--font-family-body);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 0.5rem 0;
+}
+
+.section__container__button {
+    padding-top: 1rem;
+    display: flex;
+    border-bottom: 1px solid var(--cyan-inside-call-to-action);
+    padding-bottom: 0.5rem;
+    width: max-content;
+}
+
+.section__button {
+    font-family: var(--font-family-body);
+    font-size: 1.1rem;
+    color: var(--cyan-inside-call-to-action);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.section__arrow {
+    height: 25px;
+    margin-left: 0.5rem;
+    display: block;
+}
+
+.reviews__container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.reviews__item {
+    display: flex;
+    color: var(--white);
+    flex-direction: column;
+    padding: 40px;
+    background-color: var(--dark-blue-testimonials);
+    border-radius: 5px;
+    font-family: var(--font-family-body);
+}
+
+.reviews__paragraph {
+    font-size: .9rem;
+    line-height: 2;
+}
+
+.reviews__bg {
+    position: relative;
+    top: 30px;
+    left: -130px;
+    display: block;
+    width: 30px;
+}
+
+.reviewer__author {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.reviewer__image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.reviewer__name {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.reviewer__title {
+    font-size: 0.8rem;
+}
+
+.reviewer__data{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
