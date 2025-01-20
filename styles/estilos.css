@@ -109,6 +109,7 @@ body {
 }
 
 .hero__button {
+    margin-bottom: 10rem;
     font-family: var(--font-family-headings);
     font-size: 1.3rem;
     color: var(--white);
