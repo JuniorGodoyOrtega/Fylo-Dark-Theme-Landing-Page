@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
     /* Primary Colors */
@@ -13,14 +13,16 @@
     --light-red-error: hsl(0, 100%, 63%);
 
     /* Gradients */
-    --gradient: linear-gradient(to right, var(--cyan-gradient), var(--blue-gradient));
+    --gradient: linear-gradient(to right,
+            var(--cyan-gradient),
+            var(--blue-gradient));
 
     /* Neutral Colors */
     --white: hsl(0, 0%, 100%);
 
     /* Font Families */
-    --font-family-body: 'Open Sans', sans-serif;
-    --font-family-headings: 'Raleway', sans-serif;
+    --font-family-body: "Open Sans", sans-serif;
+    --font-family-headings: "Raleway", sans-serif;
 
     /* Font Weights */
     --font-weight-body: 400;
@@ -94,7 +96,7 @@ body {
 }
 
 .nav__link {
-    margin-right: .8rem;
+    margin-right: 0.8rem;
 }
 
 .nav__link:hover {
@@ -277,11 +279,11 @@ body {
     border-radius: 5px;
     font-family: var(--font-family-body);
     position: relative;
-    box-shadow: 1px 1px 10px -5px rgba(255,255,255, .28);
+    box-shadow: 1px 1px 10px -5px rgba(255, 255, 255, 0.28);
 }
 
 .reviews__paragraph {
-    font-size: .9rem;
+    font-size: 0.9rem;
     line-height: 2;
 }
 
@@ -316,14 +318,15 @@ body {
     font-size: 0.8rem;
 }
 
-.reviewer__data{
+.reviewer__data {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
 .section__contact {
-    background-image: linear-gradient(var(--dark-blue-main) 50%, var(--dark-blue-footer) 50%);
+    background-image: linear-gradient(var(--dark-blue-main) 50%,
+            var(--dark-blue-footer) 50%);
     padding: 60px 0;
 }
 
@@ -368,11 +371,11 @@ body {
     margin-top: 0.5em;
 }
 
-.contact__input:invalid:focus ~ .error-message {
+.contact__input:invalid:focus~.error-message {
     display: block;
 }
 
-.contact__input:valid:focus ~ .error-message {
+.contact__input:valid:focus~.error-message {
     display: none;
 }
 
@@ -523,4 +526,110 @@ body {
 
 .attribution a:hover {
     color: var(--blue-gradient);
+}
+
+/* vista desktop */
+@media screen and (min-width: 1200px) {
+    .hero__main {
+        width: 50%;
+    }
+
+    .hero__paragraph {
+        width: 80%;
+    }
+
+    .benefits__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .benefits__item {
+        padding-bottom: 80px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .section__productivity {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .section__illustration {
+        max-width: 100%;
+    }
+
+    .section__content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .section__title {
+        font-size: 3rem;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .section__paragraph {
+        font-size: 1rem;
+    }
+
+    .section__container__button {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .reviews__container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .reviews__item--first::after {
+        top: -50px;
+        left: 0;
+        width: 60px;
+        height: 60px;
+    }
+
+    .contact__form {
+        padding-top: 50px;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .contact__button {
+        width: 40%;
+    }
+
+    .contact__title {
+        font-size: 3rem;
+    }
+
+    .contact__paragraph {
+        width: 80%;
+    }
+
+    .footer__container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .footer__logo {
+        grid-column: span 6;
+    }
+
+    .footer__info {
+        grid-column: span 3;
+    }
+
+    .footer__info__item--first {
+        grid-column: span 2;
+    }
 }
