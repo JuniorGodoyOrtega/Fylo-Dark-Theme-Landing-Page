@@ -534,6 +534,10 @@ body {
         width: 50%;
     }
 
+    .hero__wave::before {
+        background-image: url("../img/bg-curvy-desktop.svg");
+    }
+
     .hero__paragraph {
         width: 80%;
     }
@@ -647,9 +651,5 @@ body {
     .footer__socials {
         align-items: start;
         padding: 0;
-    }
-
-    .hero__wave::before {
-        background-image: url("../img/bg-curvy-desktop.svg");
     }
 }
